@@ -7,8 +7,10 @@ import Welcome from '../components/home/Welcome'
 import Carousel from '../components/home/Carousel'
 import Headings from '../components/home/Headings'
 import ProductRow from '../components/products/ProductRow'
+import { useNavigation } from '@react-navigation/native'
 
 const Home = () => {
+  const navigation = useNavigation()
   return (
     <SafeAreaView style={{ backgroundColor: "#ffffff", height: "100%"}}>
       <View style={styles.appbarWrapper}>
@@ -21,7 +23,7 @@ const Home = () => {
             <View style={styles.cartCount}>
             <Text style={{ fontFamily: "regular", fontWeight: "600", fontSize: 10, color: COLORS.lightWhite }}>1</Text>
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("Cart")}>
               <Fontisto name='shopping-bag' size={24} />
             </TouchableOpacity>
           </View>

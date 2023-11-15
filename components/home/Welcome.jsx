@@ -13,12 +13,12 @@ const Welcome = () => {
                 <Text style={{ fontFamily: "bold", fontSize: SIZES.xLarge - 5, marginHorizontal: 12, marginTop: SIZES.xSmall }}>
                     Find The Most
                 </Text>
-                <Text style={{ fontFamily: "bold", fontSize: 38, marginHorizontal: 10, marginTop: 0, color: COLORS.primary, }}>
+                <Text style={{ fontFamily: "bold", fontSize: SIZES.xxLarge - 10, marginHorizontal: 10, marginTop: -4, color: COLORS.primary, }}>
                     Luxurious Furniture
                 </Text>
             </View>
 
-            <View style={{ flexDirection: "row", padding: 4, justifyContent: "center", alignContent: "center", backgroundColor: COLORS.secondary, borderRadius: SIZES.medium, marginVertical: 12 }}>
+            <View style={{ flexDirection: "row", padding: 4, marginHorizontal: 8, justifyContent: "center", alignContent: "center", backgroundColor: COLORS.secondary, borderRadius: SIZES.medium, marginVertical: 12 }}>
                 <TouchableOpacity>
                     <Feather name='search' size={24} style={{ marginHorizontal: 10, color: COLORS.gray }} />
                 </TouchableOpacity>

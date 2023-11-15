@@ -5,10 +5,12 @@ import styles from './home.style'
 import { COLORS } from '../constants'
 import Welcome from '../components/home/Welcome'
 import Carousel from '../components/home/Carousel'
+import Headings from '../components/home/Headings'
+import ProductRow from '../components/products/ProductRow'
 
 const Home = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: "#ffffff", height: "100%"}}>
       <View style={styles.appbarWrapper}>
         <View style={styles.appBar}>
           <Ionicons name='location-outline' size={24} />
@@ -28,6 +30,8 @@ const Home = () => {
       <ScrollView>
         <Welcome />
         <Carousel />
+        <Headings />
+        <ProductRow />
       </ScrollView>
     </SafeAreaView>
   )

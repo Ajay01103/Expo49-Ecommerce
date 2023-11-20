@@ -34,13 +34,13 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name='BottomNavigation' component={BottomNavigation}
-         options={{headerShown: false}}
+         options={{headerShown: false }}
         />
         <Stack.Screen name='Cart' component={Cart}
-         options={{headerShown: false}}
+         options={{headerShown: false }}
         />
         <Stack.Screen name='ProductDetails' component={ProductDetails}
-         options={{headerShown: false}}
+         options={{ headerTitle: "", headerShadowVisible: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
